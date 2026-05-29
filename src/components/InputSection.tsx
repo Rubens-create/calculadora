@@ -104,10 +104,12 @@ export default function InputSection({ onSubmit }: Props) {
                 stroke="black"
                 strokeWidth="5"
                 fill="transparent"
-                strokeDasharray={251.3}
-                strokeDashoffset={251.3 - (251.3 * loadingProgress) / 100}
                 strokeLinecap="round"
-                style={{ transition: 'stroke-dashoffset 0.05s linear' }}
+                style={{
+                  strokeDasharray: '251.2',
+                  strokeDashoffset: 251.2 - (251.2 * loadingProgress) / 100,
+                  transition: 'stroke-dashoffset 0.1s ease'
+                }}
               />
             </svg>
             <span className="absolute text-sm font-extrabold text-black tabular-nums">
